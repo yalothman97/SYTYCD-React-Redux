@@ -1,4 +1,4 @@
-import * as actionTypes from "../actions/actionTypes";
+import { FETCH_AUTHOR_DETAIL } from "../actions/actionTypes";
 
 const initialState = {
   author: null,
@@ -7,7 +7,7 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case actionTypes.FETCH_AUTHOR_DETAIL:
+    case FETCH_AUTHOR_DETAIL:
       return {
         ...state,
         author: action.payload,
